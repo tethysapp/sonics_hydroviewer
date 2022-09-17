@@ -25,7 +25,9 @@ def home(request):
 	"""
 
 	folder = app.get_custom_setting('folder')
+	print(folder)
 	forecast_nc_list = sorted(glob(os.path.join(folder, "*.nc")))
+	print(forecast_nc_list)
 
 	dates_array = []
 
